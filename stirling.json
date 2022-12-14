@@ -1,0 +1,12 @@
+{
+    "homepage": "https://www.vector.co.jp/soft/win95/util/se079072.html",
+    "version": "1.31",
+    "url": "https://ftp.vector.co.jp/10/71/2144/stir131.lzh#/dl.7z",
+    "bin": "Stirling.exe",
+    "shortcuts": [
+        [
+            "Stirling.exe",
+            "Stirling"
+        ]
+    ]
+}

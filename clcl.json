@@ -4,7 +4,7 @@
     "license": "Copyright (C) 1996-2022 by Ohno Tomoaki. All rights reserved.",
     "url": "https://www.nakka.com/soft/clcl/download/clcl213.zip",
     "checkver": {
-        "url": "https://www.nakka.com/soft/clcl/"
+        "url": "https://www.nakka.com/soft/clcl/",
         "re": "clcl\\d+\\.zip"
     },
     "autoupdate": {

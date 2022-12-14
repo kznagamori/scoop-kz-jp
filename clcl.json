@@ -3,6 +3,7 @@
     "version": "213",
     "license": "Copyright (C) 1996-2022 by Ohno Tomoaki. All rights reserved.",
     "url": "https://www.nakka.com/soft/clcl/download/clcl213.zip",
+    "hash": "fd2ceb7f371e9ef218fd0b39c9f607666bad28ff6da72c2235aaeda5fdf34cfb",
     "checkver": {
         "url": "https://www.nakka.com/soft/clcl/",
         "re": "clcl\\d+\\.zip"

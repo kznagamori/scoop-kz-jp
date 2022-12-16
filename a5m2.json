@@ -1,6 +1,8 @@
 {
     "homepage": "https://a5m2.mmatsubara.com/",
+    "description": "a5m2: 高機能かつ軽量な汎用SQLクライアント",
     "version": "2.17.2",
+    "license": "Freeware",
     "bin": "A5M2.exe",
     "persist": "Portable",
     "shortcuts": [

@@ -5,11 +5,4 @@
     "license": "Freeware",
     "url": "https://www.nakka.com/soft/clcl/download/clcl213.zip",
     "hash": "fd2ceb7f371e9ef218fd0b39c9f607666bad28ff6da72c2235aaeda5fdf34cfb",
-    "checkver": {
-        "url": "https://www.nakka.com/soft/clcl/",
-        "re": "clcl\\d+\\.zip"
-    },
-    "autoupdate": {
-        "url": "https://www.nakka.com/soft/clcl/download/clcl$cleanVersion.zip"
-    }
 }

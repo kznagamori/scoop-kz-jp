@@ -19,3 +19,4 @@ PS> scoop bucket add kz-jp https://github.com/kznagamori/scoop-kz-jp
 - [CLCL](https://www.nakka.com/soft/clcl) - クリップボードの履歴を取るソフト
 - [Stirling](https://www.vector.co.jp/soft/win95/util/se079072.html) - 使いやすさと高機能を両立した最強の新・定番バイナリエディタ
 - [RoboSync](https://n-archives.net/software/robosync/) - RobocopyのためのGUIツール
+- [Clibor](https://chigusa-web.com/clibor/) - クリップボード履歴フリーソフト

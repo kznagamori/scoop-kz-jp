@@ -20,4 +20,4 @@ PS> scoop bucket add kz-jp https://github.com/kznagamori/scoop-kz-jp
 - [Stirling](https://www.vector.co.jp/soft/win95/util/se079072.html) - 使いやすさと高機能を両立した最強の新・定番バイナリエディタ
 - [RoboSync](https://n-archives.net/software/robosync/) - RobocopyのためのGUIツール
 - [Clibor](https://chigusa-web.com/clibor/) - クリップボード履歴フリーソフト
-- [Keyboard LEDs](https://keyboard-leds.com/download/) -  Keyboard LEDs shows indicator of Caps, Num and Scroll locks right on your screen.
+- [Keyboard Indicator](https://roidayan.com/keyboard-indicator/) - Keyboard Indicator is an easy to use indicator for the Num Lock, Caps Lock, Scroll Lock and Insert keys..

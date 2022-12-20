@@ -10,7 +10,7 @@
         "script": [
             "Get-ChildItem $dir -filter '*.TTC' | ForEach-Object {",
             "   $fontdir = \"$env:LocalAppData\\Microsoft\\Windows\\Fonts\"",
-            "   New-ItemProperty -Path 'HKCU:\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Value \"$fontdir\\$($_.Name)\" -Force | Out-Null",
+            "   New-ItemProperty -Path 'HKCU:\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name 'MyricaM Monospace & MyricaM Proportional & MyricaM Narrow (TrueType)' -Value \"$fontdir\\$($_.Name)\" -Force | Out-Null",
             "   Copy-Item $_.Fullname -destination \"$fontdir\"",
             "}"
         ]
@@ -19,7 +19,7 @@
         "script": [
             "Get-ChildItem $dir -filter '*.TTC' | ForEach-Object {",
             "   $fontdir = \"$env:LocalAppData\\Microsoft\\Windows\\Fonts\"",
-            "   Remove-ItemProperty -Path 'HKCU:\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Force -ErrorAction SilentlyContinue",
+            "   Remove-ItemProperty -Path 'HKCU:\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name 'MyricaM Monospace & MyricaM Proportional & MyricaM Narrow (TrueType)' -Force -ErrorAction SilentlyContinue",
             "   Remove-Item \"$fontdir\\$($_.Name)\" -Force -ErrorAction SilentlyContinue",
             "}"
         ]

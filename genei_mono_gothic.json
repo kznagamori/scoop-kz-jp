@@ -4,25 +4,5 @@
 
     "version": "1.0",
     "url": "https://okoneya.jp/font/GenEiMonoGothic_v1.0.zip",
-    "hash": "aa2bfa4c6084e313e7d474093db6e595e142f9bb1520947e838f1ef985b4a573",
-
-    "extract_dir": "GenEiMonoGothic_v1.0",
-    "installer": {
-        "script": [
-            "Get-ChildItem $dir -filter '*.ttf' | ForEach-Object {",
-            "   $fontdir = \"$env:LocalAppData\\Microsoft\\Windows\\Fonts\"",
-            "   New-ItemProperty -Path 'HKCU:\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Value \"$fontdir\\$($_.Name)\" -Force | Out-Null",
-            "   Copy-Item $_.Fullname -destination \"$fontdir\"",
-            "}"
-        ]
-    },
-    "uninstaller": {
-        "script": [
-            "Get-ChildItem $dir -filter '*.ttf' | ForEach-Object {",
-            "   $fontdir = \"$env:LocalAppData\\Microsoft\\Windows\\Fonts\"",
-            "   Remove-ItemProperty -Path 'HKCU:\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Force -ErrorAction SilentlyContinue",
-            "   Remove-Item \"$fontdir\\$($_.Name)\" -Force -ErrorAction SilentlyContinue",
-            "}"
-        ]
-    }
+    "hash": "1c0884ed0233d23f8991621c95a38ce5e49f90a850d0d356ef5c544c049e2937",
 }

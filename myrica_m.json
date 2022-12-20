@@ -1,15 +1,14 @@
 {
-    "homepage": "https://github.com/edihbrandon/RictyDiminished",
+    "homepage": "https://myrica.estable.jp/",
     "license": "SIL Open Font License (OFL) Version 1.1",
 
-    "version": "3.2.3",
-    "url": "https://github.com/edihbrandon/RictyDiminished/archive/refs/heads/master.zip",
-    "hash": "e512bb9d0a834cf7d86116ff7358af9a8c5f46fa09cfa168181d64add67f55e7",
+    "version": "2.012.2018011",
+    "url": "https://github.com/tomokuni/Myrica/raw/master/product/MyricaM.zip",
+    "hash": "4125e620b48155de5d027b24b82b341486ab2f27d5fab8f6e7960e018062fa85",
 
-    "extract_dir": "RictyDiminished-master",
     "installer": {
         "script": [
-            "Get-ChildItem $dir -filter '*.ttf' | ForEach-Object {",
+            "Get-ChildItem $dir -filter '*.ttc' | ForEach-Object {",
             "   $fontdir = \"$env:LocalAppData\\Microsoft\\Windows\\Fonts\"",
             "   New-ItemProperty -Path 'HKCU:\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Value \"$fontdir\\$($_.Name)\" -Force | Out-Null",
             "   Copy-Item $_.Fullname -destination \"$fontdir\"",
@@ -18,7 +17,7 @@
     },
     "uninstaller": {
         "script": [
-            "Get-ChildItem $dir -filter '*.ttf' | ForEach-Object {",
+            "Get-ChildItem $dir -filter '*.ttc' | ForEach-Object {",
             "   $fontdir = \"$env:LocalAppData\\Microsoft\\Windows\\Fonts\"",
             "   Remove-ItemProperty -Path 'HKCU:\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Force -ErrorAction SilentlyContinue",
             "   Remove-Item \"$fontdir\\$($_.Name)\" -Force -ErrorAction SilentlyContinue",

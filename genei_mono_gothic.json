@@ -1,12 +1,12 @@
 {
-    "homepage": "https://github.com/edihbrandon/RictyDiminished",
+    "homepage": "https://okoneya.jp/font/genei-mono-go.html",
     "license": "SIL Open Font License (OFL) Version 1.1",
 
     "version": "1.0",
     "url": "https://okoneya.jp/font/GenEiMonoGothic_v1.0.zip",
     "hash": "aa2bfa4c6084e313e7d474093db6e595e142f9bb1520947e838f1ef985b4a573",
 
-    "extract_dir": "GenEiMonoGothic_v1.0GenEiMonoGothic_v1.0",
+    "extract_dir": "GenEiMonoGothic_v1.0",
     "installer": {
         "script": [
             "Get-ChildItem $dir -filter '*.ttf' | ForEach-Object {",

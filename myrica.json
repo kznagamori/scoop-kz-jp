@@ -8,7 +8,7 @@
 
     "installer": {
         "script": [
-            "Get-ChildItem $dir -filter '*.ttc' | ForEach-Object {",
+            "Get-ChildItem $dir -filter '*.TTC' | ForEach-Object {",
             "   $fontdir = \"$env:LocalAppData\\Microsoft\\Windows\\Fonts\"",
             "   New-ItemProperty -Path 'HKCU:\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Value \"$fontdir\\$($_.Name)\" -Force | Out-Null",
             "   Copy-Item $_.Fullname -destination \"$fontdir\"",
@@ -17,7 +17,7 @@
     },
     "uninstaller": {
         "script": [
-            "Get-ChildItem $dir -filter '*.ttc' | ForEach-Object {",
+            "Get-ChildItem $dir -filter '*.TTC' | ForEach-Object {",
             "   $fontdir = \"$env:LocalAppData\\Microsoft\\Windows\\Fonts\"",
             "   Remove-ItemProperty -Path 'HKCU:\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Force -ErrorAction SilentlyContinue",
             "   Remove-Item \"$fontdir\\$($_.Name)\" -Force -ErrorAction SilentlyContinue",

@@ -9,8 +9,11 @@
     "extract_dir": "RictyDiminished-master",
     "installer": {
         "script": [
+            "$fontdir = \"$env:LocalAppData\\Microsoft\\Windows\\Fonts\"",
+            "If(!(test-path $path)) {"
+		    "   New-Item -ItemType Directory -Force -Path $fontdir",
+            "}"
             "Get-ChildItem $dir -filter '*.ttf' | ForEach-Object {",
-            "   $fontdir = \"$env:LocalAppData\\Microsoft\\Windows\\Fonts\"",
             "   New-ItemProperty -Path 'HKCU:\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Value \"$fontdir\\$($_.Name)\" -Force | Out-Null",
             "   Copy-Item $_.Fullname -destination \"$fontdir\"",
             "}"

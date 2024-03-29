@@ -1,7 +1,7 @@
 {
     "homepage": "https://a5m2.mmatsubara.com/",
     "description": "a5m2: 高機能かつ軽量な汎用SQLクライアント",
-    "version": "2.17.2",
+    "version": "2.18.4",
     "license": "Freeware",
     "bin": "A5M2.exe",
     "persist": "Portable",
@@ -13,12 +13,12 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://dforest.watch.impress.co.jp/library/a/a5sqlmk2/11233/a5m2_2.17.2_x64.zip",
-            "hash": "816e978605ba90c96294d7e5e8ddf1803c646a9201c5c9e153189b2b8bcfc364"
+            "url": "https://dforest.watch.impress.co.jp/library/a/a5sqlmk2/11233/a5m2_2.18.4_x64.zip",
+            "hash": "47dcce50db574d8805a7059a4aeb6785fcad14ba32473661040714910edbca4e"
         },
         "32bit": {
-            "url": "https://dforest.watch.impress.co.jp/library/a/a5sqlmk2/10801/a5m2_2.17.2_x86.zip",
-            "hash": "fa725e58e47836e141d4fd2dfbcd2c2c30b0d63544553c531835b7ff0f838210"
+            "url": "https://dforest.watch.impress.co.jp/library/a/a5sqlmk2/10801/a5m2_2.18.4_x86.zip",
+            "hash": "f43fd627beffee8b005b2fe7795eb59f9ed9650358ab17a93372017e664528bc"
         }
     },
     "checkver": {
@@ -28,10 +28,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://dforest.watch.impress.co.jp/library/a/a5sqlmk2/11233/a5m2_$version_x64.zip"
+                "url": "https://dforest.watch.impress.co.jp/library/a/a5sqlmk2/11233/a5m2_2.18.4_x64.zip"
             },
             "32bit": {
-                "url": "https://dforest.watch.impress.co.jp/library/a/a5sqlmk2/10801/a5m2_$version_x86.zip"
+                "url": "https://dforest.watch.impress.co.jp/library/a/a5sqlmk2/10801/a5m2_2.18.4_x86.zip"
             }
         }
     },

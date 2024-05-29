@@ -1,9 +1,9 @@
 {
     "homepage": "https://chigusa-web.com/clibor/",
     "description": "Clibor: クリップボード履歴フリーソフト",
-    "version": "2.3.2",
+    "version": "2.3.3",
     "license": "Freeware",
     "extract_dir": "clibor",
-    "url": "https://ftp.vector.co.jp/76/49/2750/clibor.zip",
-    "hash": "8edf955036bfdeef4710d4b601b45903ff0c13d5ed40656e8fc72ea7abe724eb"
+    "url": "https://ftp.vector.co.jp/76/79/2750/clibor.zip",
+    "hash": "6698177ce4db3e81105f2159e60f74ef1e4ff06a87f8030da91f5923df9c443a"
 }
